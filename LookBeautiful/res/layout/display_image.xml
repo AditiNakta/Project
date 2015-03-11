@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4" >
+
+    <RelativeLayout
+        android:id="@+id/fr1"
+        android:layout_width="300dp"
+        android:layout_height="400dp" >
+
+        <TextView
+            android:id="@+id/touchevent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="image1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="image2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fr3"
+        android:layout_width="125dp"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@+id/fr1" >
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="119dp"
+            android:background="@drawable/buttonslogin"
+            android:onClick="delete"
+            android:text=" delete "
+            android:textColor="#33CCFF" />
+
+        <Button
+            android:id="@+id/add"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/delete"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/buttonslogin"
+            android:onClick="add"
+            android:text=" add "
+            android:textColor="#33CCFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fr2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fr1" >
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:background="@drawable/buttonslogin"
+            android:onClick="share"
+            android:text="Share"
+            android:textColor="#33CCFF" />
+
+        <Button
+            android:id="@+id/compare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/buttonslogin"
+            android:onClick="compare"
+            android:text="Compare"
+            android:textColor="#33CCFF" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/share"
+            android:background="@drawable/buttonslogin"
+            android:onClick="saveImage"
+            android:text=" Save "
+            android:textColor="#33CCFF" />
+    </RelativeLayout>
+
+</RelativeLayout>
